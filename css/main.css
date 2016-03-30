@@ -34,3 +34,14 @@ svg {
 .lines path {
   stroke-dasharray: 0, 480;
 }
+
+.path {
+  transition: show 1s  ease;
+}
+
+@keyframes path {
+
+  0% { stroke-dasharray: translate(0, 480px); }
+
+  100% { stroke-dasharray: translate(0, 0); }
+}
