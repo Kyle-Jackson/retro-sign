@@ -32,22 +32,23 @@ svg {
 }
 
 .lines {
-  transition: all 1s ease;
 }
 
 .lines path {
   stroke-dasharray: 0, 480;
-  transition: all 1s ease;
 }
 
-@keyframes .lines path {
+.js-animate {
+}
+
+.js-animate path {
+  animation: all 1s ease;
+}
+
+@keyframes all {
 
   0% { stroke-dasharray: 0, 480; }
 
   100% { stroke-dasharray: 1000, 480; }
 
-}
-
-.grow {
-  stroke-dasharray: 1000, 480;
 }

@@ -1,7 +1,7 @@
 $('.btn').on('click', function (e) {
-  $('.lines').toggleClass('.lines path');
+  $('.lines').toggleClass('.js-animate');
 });
 
-$('svg').on('click', '.lines', function () {
-  $(this).addClass('grow');
+$('svg').on('click', function (e) {
+  $(this).addClass('js-animate');
 });
