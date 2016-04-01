@@ -38,14 +38,11 @@ svg {
   stroke-dasharray: 0, 480;
 }
 
-.js-animate {
-}
-
 .js-animate path {
-  animation: all 1s ease;
+  animation: grow 1s ease forwards;
 }
 
-@keyframes all {
+@keyframes grow {
 
   0% { stroke-dasharray: 0, 480; }
 
