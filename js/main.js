@@ -1,3 +1,7 @@
 $('.btn').on('click', function (e) {
-  $('.path').toggleClass('show');
+  $('.lines').toggleClass('.lines path');
+});
+
+$('svg').on('click', '.lines', function () {
+  $(this).addClass('grow');
 });

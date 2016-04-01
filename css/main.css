@@ -31,17 +31,23 @@ svg {
   cursor: pointer;
 }
 
+.lines {
+  transition: all 1s ease;
+}
+
 .lines path {
   stroke-dasharray: 0, 480;
+  transition: all 1s ease;
 }
 
-.path {
-  transition: show 1s  ease;
+@keyframes .lines path {
+
+  0% { stroke-dasharray: 0, 480; }
+
+  100% { stroke-dasharray: 1000, 480; }
+
 }
 
-@keyframes path {
-
-  0% { stroke-dasharray: translate(0, 480px); }
-
-  100% { stroke-dasharray: translate(0, 0); }
+.grow {
+  stroke-dasharray: 1000, 480;
 }
