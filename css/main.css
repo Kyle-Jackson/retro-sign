@@ -31,9 +31,6 @@ svg {
   cursor: pointer;
 }
 
-.lines {
-}
-
 .lines path {
   stroke-dasharray: 0, 480;
 }
@@ -47,5 +44,18 @@ svg {
   0% { stroke-dasharray: 0, 480; }
 
   100% { stroke-dasharray: 1000, 480; }
+
+}
+
+.engage path {
+  animation: colour 1s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes colour {
+
+  0% { fill: #630; }
+
+  100% { fill: orange; }
 
 }

@@ -5,3 +5,7 @@ $('svg').on('click', function (e) {
 $('.svg').on('animationend', function (e) {
   $(this).removeClass('js-animate');
 });
+
+$('.js-animate').on('animationend', function (e) {
+  $(this).addClass('engage');
+});
