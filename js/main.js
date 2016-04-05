@@ -1,11 +1,7 @@
 $('svg').on('click', function (e) {
-  $(this).addClass('js-animate');
+  $(this).toggleClass('js-animate');
 });
 
-$('.svg').on('animationend', function (e) {
-  $(this).removeClass('js-animate');
-});
-
-$('.js-animate').on('animationend', function (e) {
-  $(this).addClass('engage');
+$('.svg').on('mouseover', function (e) {
+  $('.btn').toggleClass('btn:active');
 });

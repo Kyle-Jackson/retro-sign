@@ -36,7 +36,7 @@ svg {
 }
 
 .js-animate path {
-  animation: grow 1s ease forwards;
+  animation: grow 1s linear forwards;
 }
 
 @keyframes grow {
@@ -47,15 +47,43 @@ svg {
 
 }
 
-.engage path {
-  animation: colour 1s ease forwards;
-  animation-delay: 1s;
+.js-animate .engage path {
+  transition: all 1s linear;
+  fill: #630;
 }
 
-@keyframes colour {
+.engage path:nth-child(2) {
+  transition-delay: 1s;
+}
 
-  0% { fill: #630; }
+.js-animate .btn path:nth-child(2) {
+  fill: #630;
+}
 
-  100% { fill: orange; }
+.engage path:nth-child(3) {
+  transition-delay: 1.1s;
+}
 
+.js-animate .btn path:nth-child(3) {
+  fill: #630;
+}
+
+.engage path:nth-child(4) {
+  transition-delay: 1.1s;
+}
+
+.js-animate .btn path:nth-child(4) {
+  fill: #630;
+}
+
+.engage path:nth-child(5) {
+  transition-delay: 1s;
+}
+
+.js-animate .btn path:nth-child(5) {
+  fill: #630;
+}
+
+.btn:active {
+  transform: scale(1, 1);
 }
